@@ -3,6 +3,7 @@ require('dotenv').config();
 const supplementInfoController = require('./controllers/supplementInfoController');
 
 const app = express();
+app.use(express.json());
 
 const baseRoute = process.env.BASE_ROUTE;
 
